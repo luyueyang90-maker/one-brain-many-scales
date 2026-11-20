@@ -1,0 +1,42 @@
+/* Final presentation cleanup. Scientific captions and sources are retained. */
+.site-top{justify-content:flex-end!important}
+#cover .meta{display:block!important}
+#cover .author-name{display:inline-block;color:#f5f6f8;font-size:clamp(21px,1.6vw,30px);font-weight:500;letter-spacing:.025em;border:0;background:none;padding:0;box-shadow:none;border-radius:0}
+
+/* Acknowledgements: an open constellation, with all names always visible. */
+#acknowledgements{background:#000!important;overflow:hidden}
+#acknowledgements .slide-inner{display:flex;flex-direction:column;min-height:calc(100svh - 135px)}
+#acknowledgements .eyebrow{color:#5be6f7}
+#acknowledgements h2{font-weight:650;letter-spacing:-.045em}
+#acknowledgements .ack-lead{color:#a8b3c0;font-size:clamp(16px,1.2vw,23px);line-height:1.4;margin:0 0 10px}
+#acknowledgements .ack-visual{flex:1 1 auto;width:100%;min-height:470px;display:flex;align-items:center;justify-content:center}
+#acknowledgements .ack-visual svg{display:block;width:100%;height:auto;max-height:780px;overflow:visible}
+#acknowledgements .ack-visual text{font-family:Inter,"Segoe UI",Arial,sans-serif;fill:#f0f2f6;font-weight:400}
+#acknowledgements .ack-visual .ack-head{font-size:18px;font-weight:600;letter-spacing:2.2px;fill:#72dcea}
+#acknowledgements .ack-visual .ack-head-peers{fill:#eecb8c}
+#acknowledgements .ack-visual .ack-note{font-size:18px;fill:#9aa5b5}
+#acknowledgements .ack-visual .ack-name{font-size:27px;letter-spacing:-.45px;font-weight:500}
+#acknowledgements .ack-visual .ack-lab-tag{font-size:20px;fill:#82909f;font-weight:400}
+#acknowledgements .ack-visual .ack-peer-note{font-size:15px;fill:#82909f}
+#acknowledgements .ack-visual .ack-hub-title{font-size:35px;font-weight:500;letter-spacing:-1px;text-anchor:middle}
+#acknowledgements .ack-visual .ack-hub-gold{fill:#f3d097}
+#acknowledgements .ack-path{fill:none;stroke-width:1.1;stroke:#395362;stroke-opacity:.53}
+#acknowledgements .ack-peer-path{stroke:#655736;stroke-opacity:.58}
+#acknowledgements .ack-link-flow{fill:none;stroke:#8ce5ef;stroke-width:1.7;stroke-dasharray:6 94;stroke-linecap:round;stroke-opacity:.7;animation:ackFlow 7.6s linear infinite}
+#acknowledgements .ack-peer-flow{stroke:#f0d29b;animation-duration:8.8s}
+#acknowledgements .ack-node-halo{fill:none;stroke:#70d8e7;stroke-width:1;opacity:.35;transform-box:fill-box;transform-origin:center;animation:ackHalo 5.8s ease-in-out infinite}
+#acknowledgements .ack-orbit{transform-box:fill-box;transform-origin:center;animation:ackOrbit 38s linear infinite}
+#acknowledgements .ack-core-glow{animation:ackCore 6.7s ease-in-out infinite}
+#acknowledgements .ack-support{font-size:20px;fill:#b7c1cb}
+#acknowledgements .ack-support-name{font-size:23px;font-weight:500;fill:#e8edf4}
+.focus #acknowledgements .slide-inner{height:100%!important;min-height:0!important}
+.focus #acknowledgements .ack-lead{flex:none;margin:0!important;font-size:clamp(16px,1.15vw,22px)}
+.focus #acknowledgements .ack-visual{flex:1 1 0;min-height:0;margin:1.3vh 0 0}
+.focus #acknowledgements .ack-visual svg{width:100%;height:100%;max-height:none}
+@keyframes ackFlow{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}
+@keyframes ackHalo{0%,100%{opacity:.2;transform:scale(1)}50%{opacity:.55;transform:scale(1.35)}}
+@keyframes ackOrbit{to{transform:rotate(360deg)}}
+@keyframes ackCore{0%,100%{opacity:.45}50%{opacity:.8}}
+@media(max-width:900px){#acknowledgements .ack-visual{min-height:360px}.focus #acknowledgements .ack-visual{min-height:0}#acknowledgements .ack-lead{font-size:16px}}
+@media(prefers-reduced-motion:reduce){#acknowledgements *,#acknowledgements *::before,#acknowledgements *::after{animation:none!important;transition:none!important}}
+@media print{#acknowledgements *{animation:none!important}}
