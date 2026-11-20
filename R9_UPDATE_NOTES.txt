@@ -1,0 +1,23 @@
+R9 完整仓库更新说明 — 2026-11-20
+
+这是可编辑的 R9 模块化项目，不是旧版的单文件 index.html。
+
+请解压后进入文件夹内部，从 GitHub 仓库的最外层上传下列项目：
+  docs/  (必需，包含 index.html、CSS、JS、数据文件与 30 个独立图片)
+  README.md、LICENSE、ASSET_RIGHTS.md  (建议同步更新)
+  R9_UPDATE_NOTES.txt (可选)
+
+网页路径应是 /docs/index.html；千万不要出现 /docs/docs/index.html。
+GitHub Pages 保持 Source=Deploy from a branch / main /docs，无需修改。
+
+重点变化：
+- R9 的 14 个内容章节，神经元/行为结果一页双图；SERS 一页双图。
+- 原页面的 5 张 Guo 图、其它文献和交互组件保留。
+- 单独提取 30 张科研图，修改成相对路径。
+- R9 样式拆为 3 个 CSS 文件，行为/SERS 的科研数据另存 research-content.js。
+- 全部互动脚本拆为 3 个 JS 文件，原图放大/导航/演示模式仍然存在。
+- 移除预览 HTML 所带的 Cloudflare 第三方统计脚本。
+- 添加脚本/CSS 版本参数，避免缓存旧版。
+
+原先仓库里旧文件仍可能存在（例如没有被 R9 使用的旧图像）；在 Github 网页批量上传
+不会自动删除旧文件。它们不会影响 R9 页面。确认新版发布成功后，可再清理这些未使用旧文件。

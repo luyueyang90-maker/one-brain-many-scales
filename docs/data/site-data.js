@@ -1,5 +1,5 @@
-// Edit module text, figure titles and galleries here.
-// Figure files are stored in docs/assets/images/.
+// R9: page order, scientific text, figure definitions and file paths.
+// Edit this file for titles and gallery choices; figure files live in docs/assets/images/.
 window.SITE_DATA = {
   "modules": [
     {
@@ -8,9 +8,7 @@ window.SITE_DATA = {
       "title": "One brain. Multiple descriptions. Missing bridges.",
       "intro": "Molecular & circuit mechanisms are rich in animal models. Human signals and cognition add a different observational vocabulary. The challenge is to identify relations that remain explanatory when scales and species change.",
       "gallery": [
-        "animal_memory",
-        "memory_spikes",
-        "theta_example"
+        "animal_memory"
       ],
       "label": "",
       "question": "Which micro-to-meso relations can remain testable in human dynamics?"
@@ -26,16 +24,14 @@ window.SITE_DATA = {
     },
     {
       "id": "social",
-      "eyebrow": "BEHAVIOR / CONTEXT",
-      "title": "A behavioral state has boundaries.",
-      "intro": "A social action depends on its partner, paradigm and history. The same movement in different tasks need not denote the same state. This becomes a question about what belongs inside an effective neural state.",
-      "gallery": [
-        "social_engram",
-        "animal_memory",
-        "theta_example"
-      ],
+      "research": "behavior-summary",
+      "navLabel": "Neural findings",
+      "eyebrow": "MY FINDINGS / NEURONAL ACTIVITY",
+      "title": "Neuronal responses to task conditions",
+      "intro": "",
+      "gallery": [],
       "label": "",
-      "question": "What context must a predictive population state retain?"
+      "question": ""
     },
     {
       "id": "magnetic",
@@ -67,15 +63,14 @@ window.SITE_DATA = {
     },
     {
       "id": "sers",
-      "eyebrow": "SERS / SCIENTIFIC VARIABLE",
-      "title": "A chosen readout defines a chosen question.",
-      "intro": "My current proposal targets CD45+ extracellular vesicles with CD28/CD16 dual-channel SERS.",
-      "gallery": [
-        "sers_anim",
-        "ev_sers_reference"
-      ],
+      "research": "sers-summary",
+      "navLabel": "SERS findings",
+      "eyebrow": "MY FINDINGS / SERS",
+      "title": "SERS prediction across laboratories",
+      "intro": "",
+      "gallery": [],
       "label": "",
-      "question": "Which signal components estimate the intended biological quantity?"
+      "question": ""
     },
     {
       "id": "guo",
@@ -181,13 +176,6 @@ window.SITE_DATA = {
       "note": "From supplied research presentation; literature figure",
       "src": "./assets/images/memory_spikes.jpg"
     },
-    "social_engram": {
-      "title": "Social reward and stress: memory engram states",
-      "source": "Lei et al. · 2022 · supplied research slides",
-      "group": "neural",
-      "note": "Literature figure from earlier supplied research presentation",
-      "src": "./assets/images/social_engram.jpg"
-    },
     "cogitate": {
       "title": "COGITATE: competing consciousness predictions",
       "source": "",
@@ -286,26 +274,12 @@ window.SITE_DATA = {
       "note": "Team design figure",
       "src": "./assets/images/trusense_ui.jpg"
     },
-    "ev_sers_reference": {
-      "title": "Reference SERS sandwich-assay scheme",
-      "source": "",
-      "group": "sers",
-      "note": "",
-      "src": "./assets/images/ev_sers_reference.jpg"
-    },
     "chirality_anim": {
       "title": "Chirality selection in shear flow · animated",
       "source": "",
       "group": "mechanism",
       "note": "",
       "src": "./assets/images/chirality_anim.gif"
-    },
-    "sers_anim": {
-      "title": "SERS dual-channel detection · animated",
-      "source": "",
-      "group": "sers",
-      "note": "",
-      "src": "./assets/images/sers_anim.gif"
     },
     "fields_anim": {
       "title": "Collective field and recorded rhythms · animated",
@@ -369,6 +343,34 @@ window.SITE_DATA = {
       "group": "guo",
       "note": "",
       "src": "./assets/images/guo_03_swinir3d_restoration.png"
+    },
+    "sers_result_4": {
+      "title": "P03 model predictions",
+      "source": "Rotation 2 research report, Figure 4, left",
+      "group": "sers",
+      "note": "Reported public adenine SERS analysis. Original exported figure.",
+      "src": "./assets/images/sers_result_4.png"
+    },
+    "sers_result_7": {
+      "title": "LOSO R² heatmap",
+      "source": "Rotation 2 research report, Figure 5, right",
+      "group": "sers",
+      "note": "Reported public adenine SERS analysis. Original exported figure.",
+      "src": "./assets/images/sers_result_7.png"
+    },
+    "behavior_cell20": {
+      "title": "Cell 20: Start 1 and Start 2",
+      "source": "Mini_E_4oscial_beforeReverse, Slide 5",
+      "group": "behavior",
+      "note": "Reported AUC 1.0000; selected example; original sample-index axis.",
+      "src": "./assets/images/behavior_cell20.jpg"
+    },
+    "behavior_cell96": {
+      "title": "Cell 96: Start 1 and Start 2",
+      "source": "Mini_E_4oscial_beforeReverse, Slide 6",
+      "group": "behavior",
+      "note": "Reported AUC 0.0224; selected example; original sample-index axis.",
+      "src": "./assets/images/behavior_cell96.jpg"
     }
   }
 };

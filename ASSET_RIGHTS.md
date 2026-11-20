@@ -1,21 +1,20 @@
-# Asset licensing and scientific attribution
+# Scientific image rights and attribution — R9
 
-This repository preserves 29 image assets (including JPEG figures, GIF
-animations and SVG graphics) from the supplied research presentation.
-Image titles, article citations, and descriptive source notes are stored in
-`site/data/site-data.js` and displayed in the website.
+The R9 site includes 30 separate image assets (JPEG, PNG, SVG, and GIF).
+Titles, article citations, and source notes are stored in `docs/data/site-data.js`,
+and the selected neural/SERS figures' sources and limitations are in
+`docs/data/research-content.js` (also displayed via **Sources & scope**).
 
-**Source attribution is not equivalent to a redistribution license.** Some
-figures are described in the presentation as coming from published papers or
-other third-party materials. Their intellectual-property rights may belong
-to original authors, journals, institutions, or other rights holders.
+**Code is open source; third-party science figures are not automatically
+open-licensed.** The MIT software license does not grant rights to published
+figures, journal images, research-group diagrams, or user-supplied experimental
+figures. Verify authorization and attribution before redistribution.
 
-The MIT license in this repository does **not** grant any rights to reuse,
-redistribute, modify, or sublicense third-party images or figures. Before
-publishing a *public* repository or website, the maintainer must verify
-permission, license terms, and attribution for each included asset. Replace
-or remove assets that cannot legally be republished.
+Some images come from research reports, presentations or academic articles.
+The same standards apply to data diagrams, photographs, and schematics.
+Representing an image in a public GitHub repository does not establish consent
+for other parties to modify or reuse it.
 
-Research claims, explanatory diagrams, published figures, and proposals retain
-the original labeling supplied in the uploaded file. Uploading files here
-does not convert them into openly licensed scientific results.
+The R9 summary contains (1) selected-cell calcium/neural response plots, and
+(2) public adenine SERS cross-laboratory analysis figures. Their interpretive
+limitations are explicitly listed in `research-content.js` and should be kept.
