@@ -12,7 +12,7 @@ window.SITE_DATA = {
         "memory_spikes",
         "theta_example"
       ],
-      "label": "What is already known — and what still needs an explanatory bridge?",
+      "label": "",
       "question": "Which micro-to-meso relations can remain testable in human dynamics?"
     },
     {
@@ -34,7 +34,7 @@ window.SITE_DATA = {
         "animal_memory",
         "theta_example"
       ],
-      "label": "Behavioral definitions constrain what neural signals can mean.",
+      "label": "",
       "question": "What context must a predictive population state retain?"
     },
     {
@@ -43,9 +43,10 @@ window.SITE_DATA = {
       "title": "From navigational behavior to molecular candidates.",
       "intro": "Biological magnetosensing illustrates a difficult macro-to-micro program: identify a physical interaction, molecular candidate and a causal route to the behavior. A microscopic effect alone is not yet a complete circuit-level navigation theory.",
       "gallery": [
-        "chirality_anim"
+        "chirality_anim",
+        "microfluidic_system"
       ],
-      "label": "Related training: spirulina chirality → shear-dependent drift → proposed microfluidic readout.",
+      "label": "",
       "question": "Where is the intermediate transduction and circuit evidence?"
     },
     {
@@ -61,7 +62,7 @@ window.SITE_DATA = {
         "trusense_eleccompare",
         "trusense_ui"
       ],
-      "label": "SensUs 2026: CoDH sensing and biology work · team Gold Award",
+      "label": "",
       "question": "When the trace changes, what physical or biological quantity changed?"
     },
     {
@@ -73,7 +74,7 @@ window.SITE_DATA = {
         "sers_anim",
         "ev_sers_reference"
       ],
-      "label": "Dual-channel method proposal · reference assay shown separately",
+      "label": "",
       "question": "Which signal components estimate the intended biological quantity?"
     },
     {
@@ -82,14 +83,14 @@ window.SITE_DATA = {
       "title": "One image, several possible causes.",
       "intro": "Scattering and wavefront aberrations make inverse imaging non-unique. Phase diversity introduces a known optical change to constrain the inverse problem. Your LoRA work explores adaptation of 3D restoration models, with model limits still requiring testing.",
       "gallery": [
-        "caoburden",
         "caopipeline",
-        "caoprelim",
-        "caohardware",
         "caooverview",
-        "guo_anim"
+        "caoloop",
+        "caobackbone",
+        "caoprelim",
+        "caohardware"
       ],
-      "label": "Computational adaptive optics · proposed system and initial validation",
+      "label": "",
       "question": "Which extra measurement reduces ambiguity rather than only fitting pixels?"
     },
     {
@@ -101,17 +102,8 @@ window.SITE_DATA = {
         "contest_final2d",
         "contest_final3d"
       ],
-      "label": "Original competition report · Fig. 4-1 (2D Zemax) · Fig. 4-2 (3D model) · July 2026",
+      "label": "",
       "question": "How do imaging performance and practical fabrication constraints shape a feasible optical design?"
-    },
-    {
-      "id": "transfer",
-      "eyebrow": "VALIDATION / TRANSFER",
-      "title": "A predictive feature may not be invariant.",
-      "intro": "In your SERS public-data analysis, cross-laboratory performance fell relative to within-laboratory validation; the fixed MDD signature did not transfer to a separate tissue and platform. These are real limits of that analysis, and a reason to explicitly test cross-species transfer assumptions.",
-      "gallery": [],
-      "label": "Rotation 2 · observed generalization limits",
-      "question": "What relation stays stable when the measurement domain changes?"
     },
     {
       "id": "mind",
@@ -122,7 +114,7 @@ window.SITE_DATA = {
         "cogitate",
         "memory_spikes"
       ],
-      "label": "COGITATE Consortium · Nature 2025",
+      "label": "",
       "question": "Which contrast would make the concept experimentally decidable?"
     },
     {
@@ -135,7 +127,7 @@ window.SITE_DATA = {
         "model_gu",
         "model_lyu"
       ],
-      "label": "Pang · Nature, 2023  |  Gu · Nature Communications, 2015  |  Lyu · Nature Neuroscience, 2025  · explanatory schematics",
+      "label": "",
       "question": "Could one circuit-constrained dynamical model predict a human response that was not used for fitting?"
     },
     {
@@ -153,7 +145,7 @@ window.SITE_DATA = {
       "title": "Three different reasons a bridge may fail.",
       "intro": "Current limitations are not just a missing timestamp or an inconvenient file format. Some variables were never measured together; other circuit states remain indistinguishable in the recording; some constructs are not yet operationally stable.",
       "gallery": [],
-      "label": "These are methodological diagnoses from the source survey; they are not claimed experimental results.",
+      "label": "",
       "question": "Which missing constraint would actually change the model we can test?"
     },
     {
@@ -185,7 +177,7 @@ window.SITE_DATA = {
     },
     "memory_spikes": {
       "title": "Human memory retrieval: neuronal sequence replay",
-      "source": "Vaz et al. · Science · 2020",
+      "source": "Vaz et al., Science, 2020",
       "group": "neural",
       "note": "From supplied research presentation; literature figure",
       "src": "./assets/images/memory_spikes.jpg"
@@ -199,9 +191,9 @@ window.SITE_DATA = {
     },
     "cogitate": {
       "title": "COGITATE: competing consciousness predictions",
-      "source": "COGITATE Consortium · Nature · 2025",
+      "source": "",
       "group": "neural",
-      "note": "Literature figure from earlier supplied research presentation",
+      "note": "",
       "src": "./assets/images/cogitate.jpg"
     },
     "theta_example": {
@@ -226,32 +218,32 @@ window.SITE_DATA = {
       "src": "./assets/images/caoburden.jpg"
     },
     "caopipeline": {
-      "title": "Phase diversity: image pairs and wavefront recovery",
-      "source": "Guo Min lab · project proposal · 2026",
+      "title": "Phase diversity (PD): optical phase estimation principle",
+      "source": "",
       "group": "guo",
-      "note": "Method diagram from user-supplied proposal",
+      "note": "",
       "src": "./assets/images/caopipeline.jpg"
     },
     "caoprelim": {
       "title": "Wavefront estimation and recovery: initial validation",
-      "source": "Guo Min lab · project proposal · 2026",
+      "source": "",
       "group": "guo",
-      "note": "Initial validation figure presented in proposal",
+      "note": "",
       "src": "./assets/images/caoprelim.jpg"
     },
     "caohardware": {
       "title": "Adaptive-optics fluorescence microscopy setup",
-      "source": "Guo Min lab · project proposal · 2026",
+      "source": "",
       "group": "guo",
-      "note": "Optical layout and lab photo from proposal",
+      "note": "",
       "src": "./assets/images/caohardware.jpg"
     },
     "caooverview": {
       "title": "Deep-tissue computational microscopy study plan",
-      "source": "Guo Min lab · project proposal · 2026",
+      "source": "",
       "group": "guo",
-      "note": "Research design / proposed system",
-      "src": "./assets/images/caooverview.jpg"
+      "note": "",
+      "src": "./assets/images/caooverview_new.png"
     },
     "trusense_device": {
       "title": "Wearable TruSense: exploded-device schematic",
@@ -311,23 +303,23 @@ window.SITE_DATA = {
     },
     "ev_sers_reference": {
       "title": "Reference SERS sandwich-assay scheme",
-      "source": "User-provided reference figure · source not specified",
+      "source": "",
       "group": "sers",
-      "note": "Earlier EpCAM/TGF-β1 schematic; differs from current CD45/CD28/CD16 proposal",
+      "note": "",
       "src": "./assets/images/ev_sers_reference.jpg"
     },
     "chirality_anim": {
       "title": "Chirality selection in shear flow · animated",
-      "source": "Your Xie Can rotation · conceptual mechanism",
+      "source": "",
       "group": "mechanism",
-      "note": "Predicted separation; no completed device validation",
+      "note": "",
       "src": "./assets/images/chirality_anim.gif"
     },
     "sers_anim": {
       "title": "SERS dual-channel detection · animated",
-      "source": "Your proposed CD45+ EV / CD28–CD16 work",
+      "source": "",
       "group": "sers",
-      "note": "Conceptual animation; not a validated diagnostic result",
+      "note": "",
       "src": "./assets/images/sers_anim.gif"
     },
     "guo_anim": {
@@ -346,38 +338,59 @@ window.SITE_DATA = {
     },
     "contest_final2d": {
       "title": "Final team lens · 2D Zemax ray trace",
-      "source": "Competition report · Sec. 4.1, Fig. 4-1 · July 2026",
-      "note": "Final optimized team optical structure. Zemax simulation, not a photograph of a manufactured lens.",
+      "source": "",
+      "note": "",
       "group": "optics",
       "src": "./assets/images/contest_final2d.jpg"
     },
     "contest_final3d": {
       "title": "Final optical system · 3D digital model",
-      "source": "Competition report · Sec. 4.1, Fig. 4-2 · July 2026",
-      "note": "Original 3D optical model from the submitted report. It is a digital design, not a physical prototype.",
+      "source": "",
+      "note": "",
       "group": "optics",
       "src": "./assets/images/contest_final3d.jpg"
     },
     "model_pang": {
       "title": "Geometry-based eigenmodes · conceptual explanation",
-      "source": "Pang et al. · Nature · May 2023",
+      "source": "Pang et al., Nature, 2023",
       "group": "neural",
       "note": "Illustrative decomposition, not a reproduction of the paper figure",
       "src": "./assets/images/model_pang.svg"
     },
     "model_gu": {
       "title": "From connectome to control of state transitions",
-      "source": "Gu et al. · Nature Communications · October 2015",
+      "source": "Gu et al., Nature Communications, 2015",
       "group": "neural",
       "note": "Theory-based schematic; linear model assumptions matter",
       "src": "./assets/images/model_gu.svg"
     },
     "model_lyu": {
       "title": "Human thalamocortical stimulation–response constraints",
-      "source": "Lyu et al. · Nature Neuroscience · July 2025",
+      "source": "Lyu et al., Nature Neuroscience, 2025",
       "group": "neural",
       "note": "Schematic only; waveforms are illustrative, not experimental data",
       "src": "./assets/images/model_lyu.svg"
+    },
+    "microfluidic_system": {
+      "title": "Integrated microfluidic system for helical microalgae",
+      "source": "",
+      "group": "mechanism",
+      "note": "",
+      "src": "./assets/images/microfluidic_system.png"
+    },
+    "caoloop": {
+      "title": "Wavefront-estimation algorithm: iterative correction loop",
+      "source": "",
+      "group": "guo",
+      "note": "",
+      "src": "./assets/images/caoloop.png"
+    },
+    "caobackbone": {
+      "title": "3D restoration backbone and LoRA insertion points",
+      "source": "",
+      "group": "guo",
+      "note": "",
+      "src": "./assets/images/caobackbone.png"
     }
   }
 };
