@@ -1,5 +1,5 @@
 // Edit module text, figure titles and galleries here.
-// Figure files are stored in site/assets/images/.
+// Figure files are stored in docs/assets/images/.
 window.SITE_DATA = {
   "modules": [
     {
@@ -69,7 +69,7 @@ window.SITE_DATA = {
       "id": "sers",
       "eyebrow": "SERS / SCIENTIFIC VARIABLE",
       "title": "A chosen readout defines a chosen question.",
-      "intro": "Your current proposal targets CD45+ extracellular vesicles with CD28/CD16 dual-channel SERS. Normalization is a scientific assumption about what should be preserved and what can be treated as nuisance variation; it remains to be validated.",
+      "intro": "My current proposal targets CD45+ extracellular vesicles with CD28/CD16 dual-channel SERS.",
       "gallery": [
         "sers_anim",
         "ev_sers_reference"
@@ -83,7 +83,6 @@ window.SITE_DATA = {
       "title": "One image, several possible causes.",
       "intro": "Scattering and wavefront aberrations make inverse imaging non-unique. Phase diversity introduces a known optical change to constrain the inverse problem. Your LoRA work explores adaptation of 3D restoration models, with model limits still requiring testing.",
       "gallery": [
-        "caopipeline",
         "caooverview",
         "caoloop",
         "caobackbone",
@@ -210,40 +209,26 @@ window.SITE_DATA = {
       "note": "Publication metadata not verified; shown as background example",
       "src": "./assets/images/cortex_fmri.jpg"
     },
-    "caoburden": {
-      "title": "Deep tissue: optical depth and image degradation",
-      "source": "Guo Min lab · project proposal · 2026",
-      "group": "guo",
-      "note": "Proposal illustration, not a new experimental result",
-      "src": "./assets/images/caoburden.jpg"
-    },
-    "caopipeline": {
-      "title": "Phase diversity (PD): optical phase estimation principle",
-      "source": "",
-      "group": "guo",
-      "note": "",
-      "src": "./assets/images/caopipeline.jpg"
-    },
     "caoprelim": {
-      "title": "Wavefront estimation and recovery: initial validation",
+      "title": "Wavefront estimation: preliminary Zernike validation",
       "source": "",
       "group": "guo",
       "note": "",
-      "src": "./assets/images/caoprelim.jpg"
+      "src": "./assets/images/guo_04_wavefront_validation.png"
     },
     "caohardware": {
-      "title": "Adaptive-optics fluorescence microscopy setup",
+      "title": "Dual-channel fluorescence microscopy: optical design and hardware",
       "source": "",
       "group": "guo",
       "note": "",
-      "src": "./assets/images/caohardware.jpg"
+      "src": "./assets/images/guo_05_dual_channel_microscopy.png"
     },
     "caooverview": {
-      "title": "Deep-tissue computational microscopy study plan",
+      "title": "Deep-brain imaging: thin slices, thick tissue and in vivo microscopy",
       "source": "",
       "group": "guo",
       "note": "",
-      "src": "./assets/images/caooverview_new.png"
+      "src": "./assets/images/guo_01_deep_brain_imaging.png"
     },
     "trusense_device": {
       "title": "Wearable TruSense: exploded-device schematic",
@@ -322,13 +307,6 @@ window.SITE_DATA = {
       "note": "",
       "src": "./assets/images/sers_anim.gif"
     },
-    "guo_anim": {
-      "title": "Additional optical constraint · animation",
-      "source": "Computational imaging · illustrative",
-      "group": "guo",
-      "note": "Illustrative, not a measured wavefront",
-      "src": "./assets/images/guo_anim.gif"
-    },
     "fields_anim": {
       "title": "Collective field and recorded rhythms · animated",
       "source": "Pang · Nature 2023; Lyu · Nature Neuroscience 2025",
@@ -379,18 +357,18 @@ window.SITE_DATA = {
       "src": "./assets/images/microfluidic_system.png"
     },
     "caoloop": {
-      "title": "Wavefront-estimation algorithm: iterative correction loop",
+      "title": "Phase-diversity wavefront estimation: iterative algorithm",
       "source": "",
       "group": "guo",
       "note": "",
-      "src": "./assets/images/caoloop.png"
+      "src": "./assets/images/guo_02_pd_iterative_algorithm.png"
     },
     "caobackbone": {
-      "title": "3D restoration backbone and LoRA insertion points",
+      "title": "SwinIR3D restoration: network architecture and imaging results",
       "source": "",
       "group": "guo",
       "note": "",
-      "src": "./assets/images/caobackbone.png"
+      "src": "./assets/images/guo_03_swinir3d_restoration.png"
     }
   }
 };
