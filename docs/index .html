@@ -1,0 +1,116 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="color-scheme" content="dark"/>
+<title>ONE BRAIN / MANY SCALES · Data Audit & Research Pilot</title>
+<meta name="description" content="An interactive research presentation on neural dynamics, multimodal measurement, and bridging scientific scales."/>
+<link rel="stylesheet" href="./assets/css/main.css?v=20261120-4"/><link rel="stylesheet" href="./assets/css/refinements.css?v=20261120-4"/>
+</head><body>
+<header class="site-top"><div class="controls"><button class="ctl" id="toWall">Paper & Result Wall</button><button class="ctl" id="present" title="Fit each chapter into a single slide-sized viewport">Presentation mode [P]</button><button class="ctl" id="prev">←</button><button class="ctl" id="next">→</button></div></header><nav id="sidebar" class="sidebar"><div id="sideitems"></div></nav><main id="main">
+<section class="chapter hero" id="cover"><div class="slide-inner"><h1>ONE BRAIN.<br/><span style="color:var(--cyan)">MANY SCALES.</span></h1><p class="lead">Molecules, circuits, collective dynamics, and human cognition. What can a scientific model preserve as its description changes?</p><div class="meta"><span class="author-name">Yueyang Lu</span></div><div class="hero-svg"><svg viewBox="0 0 900 130" preserveAspectRatio="xMidYMid meet"><path d="M40 65H855" class="active-line"/><g fill="#111d28" stroke="#79c7d9" stroke-width="2"><circle cx="115" cy="65" r="30"/><circle cx="334" cy="65" r="30"/><circle cx="554" cy="65" r="30"/><circle cx="780" cy="65" r="30"/></g><g font-size="14" font-weight="800" fill="#def2fa" text-anchor="middle"><text x="115" y="70">MICRO</text><text x="334" y="70">CIRCUIT</text><text x="554" y="70">MESO</text><text x="780" y="70">HUMAN</text></g></svg></div><div class="question">The goal is a testable relation, not a decorative arrow between scales.</div></div></section>
+<div id="chapters"></div>
+<section class="chapter" id="wall"><div class="slide-inner"><span class="eyebrow">LIBRARY OF EVIDENCE</span><h2>Paper & Result Wall</h2><p class="lead">Original figures and project images supplied in the conversation, plus clearly labeled explanatory animations.</p><div class="wall-tools" id="filters"></div><div class="wall-grid" id="wallgrid"></div><div class="wall-pager hide" id="wallpager"><button class="mini" onclick="wallStep(-1)">Previous figures</button><span id="wallcounter"></span><button class="mini" onclick="wallStep(1)">Next figures</button></div></div></section>
+<section class="chapter acknowledgements" id="acknowledgements" aria-label="Acknowledgements">
+  <div class="slide-inner">
+    <div class="eyebrow">ACKNOWLEDGEMENTS</div>
+    <h2>With gratitude.</h2>
+    <p class="ack-lead">This inquiry has been shaped by many people.</p>
+    <div class="ack-visual">
+      <svg viewBox="0 0 1600 610" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="ack-svg-title ack-svg-desc">
+        <title id="ack-svg-title">Acknowledgements to mentors, research groups, collaborators and presentation support</title>
+        <desc id="ack-svg-desc">With gratitude to the faculty and senior members of the Han Xu, Can Xie, Sailing He, Min Guo, Hailan Hu, Dian Lyu and Shi Gu labs for their help and guidance. Thanks to CO-LAB members, Yutong Cup teammates, the TruSense team and Star Plan peers for collective contributions to the ideas and conclusions presented here. ChatGPT assisted with presentation planning, visual design and implementation.</desc>
+        <defs>
+          <radialGradient id="ack-cyan-glow"><stop offset="0" stop-color="#5be6f7" stop-opacity=".15"/><stop offset=".5" stop-color="#5be6f7" stop-opacity=".035"/><stop offset="1" stop-color="#5be6f7" stop-opacity="0"/></radialGradient>
+          <linearGradient id="ack-ring-gradient" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6ad8e8"/><stop offset=".45" stop-color="#6e929e"/><stop offset="1" stop-color="#eecb8c"/></linearGradient>
+        </defs>
+        <text x="35" y="42" class="ack-head">GUIDANCE &amp; MENTORSHIP</text>
+        <text x="35" y="74" class="ack-note">Faculty and senior lab members</text>
+        <text x="1137" y="42" class="ack-head ack-head-peers">IDEAS SHAPED TOGETHER</text>
+        <text x="1137" y="74" class="ack-note">Colleagues &amp; teammates</text>
+
+        <g aria-hidden="true">
+          <!-- Light traces denote shared support, not scientific causality. -->
+          <path class="ack-path" d="M508 123C614 123 603 300 682 300"/>
+          <path class="ack-path" d="M508 178C625 178 608 300 682 300"/>
+          <path class="ack-path" d="M508 233C635 233 610 300 682 300"/>
+          <path class="ack-path" d="M508 288C615 288 620 300 682 300"/>
+          <path class="ack-path" d="M508 343C635 343 610 300 682 300"/>
+          <path class="ack-path" d="M508 398C625 398 608 300 682 300"/>
+          <path class="ack-path" d="M508 453C614 453 603 300 682 300"/>
+          <path class="ack-link-flow" pathLength="100" style="animation-delay:-.4s" d="M508 123C614 123 603 300 682 300"/>
+          <path class="ack-link-flow" pathLength="100" style="animation-delay:-1.5s" d="M508 178C625 178 608 300 682 300"/>
+          <path class="ack-link-flow" pathLength="100" style="animation-delay:-2.6s" d="M508 233C635 233 610 300 682 300"/>
+          <path class="ack-link-flow" pathLength="100" style="animation-delay:-3.7s" d="M508 288C615 288 620 300 682 300"/>
+          <path class="ack-link-flow" pathLength="100" style="animation-delay:-4.8s" d="M508 343C635 343 610 300 682 300"/>
+          <path class="ack-link-flow" pathLength="100" style="animation-delay:-5.9s" d="M508 398C625 398 608 300 682 300"/>
+          <path class="ack-link-flow" pathLength="100" style="animation-delay:-7s" d="M508 453C614 453 603 300 682 300"/>
+
+          <path class="ack-path ack-peer-path" d="M1108 151C1003 151 1012 300 918 300"/>
+          <path class="ack-path ack-peer-path" d="M1108 241C1008 241 1007 300 918 300"/>
+          <path class="ack-path ack-peer-path" d="M1108 331C1008 331 1007 300 918 300"/>
+          <path class="ack-path ack-peer-path" d="M1108 421C1003 421 1012 300 918 300"/>
+          <path class="ack-link-flow ack-peer-flow" pathLength="100" style="animation-delay:-.9s" d="M1108 151C1003 151 1012 300 918 300"/>
+          <path class="ack-link-flow ack-peer-flow" pathLength="100" style="animation-delay:-3.1s" d="M1108 241C1008 241 1007 300 918 300"/>
+          <path class="ack-link-flow ack-peer-flow" pathLength="100" style="animation-delay:-5.3s" d="M1108 331C1008 331 1007 300 918 300"/>
+          <path class="ack-link-flow ack-peer-flow" pathLength="100" style="animation-delay:-7.5s" d="M1108 421C1003 421 1012 300 918 300"/>
+        </g>
+
+        <g class="ack-labs">
+          <text x="35" y="132" class="ack-name">Han Xu <tspan class="ack-lab-tag">Lab</tspan></text>
+          <text x="35" y="187" class="ack-name">Can Xie <tspan class="ack-lab-tag">Lab</tspan></text>
+          <text x="35" y="242" class="ack-name">Sailing He <tspan class="ack-lab-tag">Lab</tspan></text>
+          <text x="35" y="297" class="ack-name">Min Guo <tspan class="ack-lab-tag">Lab</tspan></text>
+          <text x="35" y="352" class="ack-name">Hailan Hu <tspan class="ack-lab-tag">Lab</tspan></text>
+          <text x="35" y="407" class="ack-name">Dian Lyu <tspan class="ack-lab-tag">Lab</tspan></text>
+          <text x="35" y="462" class="ack-name">Shi Gu <tspan class="ack-lab-tag">Lab</tspan></text>
+          <g fill="#78ddeb"><circle cx="508" cy="123" r="4"/><circle cx="508" cy="178" r="4"/><circle cx="508" cy="233" r="4"/><circle cx="508" cy="288" r="4"/><circle cx="508" cy="343" r="4"/><circle cx="508" cy="398" r="4"/><circle cx="508" cy="453" r="4"/></g>
+          <circle class="ack-node-halo" cx="508" cy="123" r="9"/><circle class="ack-node-halo" cx="508" cy="288" r="9" style="animation-delay:-1.8s"/><circle class="ack-node-halo" cx="508" cy="453" r="9" style="animation-delay:-3.6s"/>
+          <text x="35" y="503" class="ack-note">For your help, patience and guidance.</text>
+        </g>
+
+        <g aria-hidden="true">
+          <circle cx="800" cy="300" r="195" fill="url(#ack-cyan-glow)" class="ack-core-glow"/>
+          <circle cx="800" cy="300" r="146" fill="none" stroke="#35515e" stroke-width=".8" opacity=".55"/>
+          <circle cx="800" cy="300" r="118" fill="#000" stroke="url(#ack-ring-gradient)" stroke-width="1.3"/>
+          <circle cx="800" cy="300" r="105" fill="none" stroke="#24353d" stroke-width=".7"/>
+          <g class="ack-orbit"><circle cx="800" cy="300" r="146" fill="none" stroke="#5d99a8" stroke-width="1.2" stroke-dasharray="2 30" opacity=".5"/><circle cx="800" cy="154" r="4.5" fill="#8de5ec"/><circle cx="800" cy="446" r="4.5" fill="#e8c78e"/><circle cx="654" cy="300" r="2.5" fill="#7199ac"/><circle cx="946" cy="300" r="2.5" fill="#a19d83"/></g>
+        </g>
+        <text x="800" y="291" class="ack-hub-title">Shared</text>
+        <text x="800" y="335" class="ack-hub-title ack-hub-gold">inquiry</text>
+
+        <g class="ack-peers">
+          <g fill="#eecb8c"><circle cx="1108" cy="151" r="4"/><circle cx="1108" cy="241" r="4"/><circle cx="1108" cy="331" r="4"/><circle cx="1108" cy="421" r="4"/></g>
+          <text x="1137" y="160" class="ack-name">CO-LAB members</text>
+          <text x="1137" y="188" class="ack-peer-note">Student-led discussion group</text>
+          <text x="1137" y="250" class="ack-name">Yutong Cup teammates</text>
+          <text x="1137" y="340" class="ack-name">TruSense team</text>
+          <text x="1137" y="430" class="ack-name">Star Plan peers</text>
+          <text x="1137" y="480" class="ack-note">For collective contributions to the ideas</text>
+          <text x="1137" y="507" class="ack-note">and conclusions presented here.</text>
+        </g>
+
+        <path d="M35 544H1565" stroke="#222c34" stroke-width="1"/>
+        <g transform="translate(350 579)">
+          <path d="M0-15h31v22H13l-8 7V7H0z" fill="none" stroke="#738993" stroke-width="1.4" stroke-linejoin="round"/>
+          <g fill="#8cc9d2"><circle cx="8" cy="-4" r="1.7"/><circle cx="15.5" cy="-4" r="1.7"/><circle cx="23" cy="-4" r="1.7"/></g>
+          <text x="49" y="4" class="ack-support-name">ChatGPT</text>
+          <path d="M174-15V9" stroke="#39434b" stroke-width="1"/>
+          <text x="198" y="3" class="ack-support">Presentation planning, visual design &amp; implementation</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="chapter closing" id="closing"><div class="slide-inner closing-content">
+<div class="eyebrow">STAR PLAN · ANNUAL RESEARCH REVIEW</div>
+<div class="closing-symbol" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+<h2>Thank you for your attention.</h2>
+<p>I welcome your questions, comments, and suggestions.</p>
+
+</div></section>
+</main>
+<div class="modal" id="modal"><button class="close" id="close">Close ×</button><figure><img id="large" alt="Expanded scientific figure"/><figcaption id="largecap"></figcaption></figure></div>
+<script src="./data/site-data.js?v=20261120-4"></script><script src="./assets/js/app.js?v=20261120-4"></script>
+
+<!-- NB7_VISUAL_BRIDGE:BEGIN -->
+<script src="./assets/js/bridge-v7-runtime.js?v=20261120-4"></script>
+<!-- NB7_VISUAL_BRIDGE:END -->
+</body></html>
